@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <title>Document</title>
+  </head>
+
+
+
+	<div id="myBtnContainer" 
+	style="
+	position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+	border: 2px solid red;
+    border-radius: 3px;
+	margin-left: 1%;
+	">
+		<button class="btn active"
+		onclick="filterSelection('all')">Show All</button>
+		<button class="btn" onclick="filterSelection('Lamborgini')"> Lamborgini</button>
+		<button class="btn" onclick="filterSelection('rollsroyce')"> Rolls Royce</button>
+		<button class="btn" onclick="filterSelection('Ferrari')"> Ferrari</button>
+		<button class="btn" onclick="filterSelection('Mopar')"> Mopar</button>
+		
+	</div>
+
+    <div class="wrap">
+      <div class="intro">
+		<h1 style="color: red ;">Car Gallery</h1>
+        This is a gallery to show off cars using HTML, CSS, and Javascript<br /><br />
+
+        <br /><br />
+
+        Click on thumbnails to enlarge the pictures.
+      </div>
+
+      <br />
+
+
+
+			<div class="container">
+				<div class="filterDiv Lamborgini" style="max-width: 75%;margin-bottom: 60px;">
+					<h2>Lamborgini</h2>
+					<div class="mySlides">
+					  <img class="image" src="images/lambo/lambo-aventador.jpg" style="width: 290px" />
+					  <p>
+						Lamborgini Aventador
+						<br />
+						HP: 769
+						<br />
+						Price: $200k - 500k
+						
+					  </p>
+					</div>
+			
+					<div class="mySlides">
+					  <img
+						class="image"
+						src="images/lambo/lambo-gallardo.jpg"
+						style="width: 290px"
+						alt="Treasure House by Jim Gallucci "
+					  />
+					  <p>
+						Lamborgini Gallardo
+						<br />
+						HP: 543
+						<br />
+						Price: $150 - 250k
+						
+					  </p>
+					</div>
+			
+					<div class="mySlides">
+					  <img
+						class="image"
+						src="images/lambo/lambo-murcielago.jpg"
+						style="width: 290px"
+					  />
+					  <p>
+						Lamborgini Murcielago
+						<br />
+						HP: 632 to 661
+						<br />
+						Price: $200 - 300k
+						
+					  </p>
+					</div>
+			
+					<div class="mySlides">
+					  <img
+						class="image"
+						src="images/lambo/lambo-urus.jpg"
+						style="width: 290px"
+						alt="Love by Vivien Weller "
+					  />
+					  <p>
+						Lamborgini Urus
+						<br />
+						HP: 641
+						<br />
+						Price: $200 - 300k
+						
+					  </p>
+					</div>
+			
+			
+			
+					<div class="LamborginiSlider" >
+					  <div class="leftHover" onclick="plusDivs(-1)">&#10094;</div>
+					  <div class="rightHover" onclick="plusDivs(1)">&#10095;</div>
+					</div>
+			
+					<div class="popup-image">
+					  <span>&times;</span>
+					  <img src="images/test.jpg" />
+					</div>
+				  </div>
+			
+				  
+				  <div class="filterDiv rollsroyce" style="max-width: 75%;margin-bottom: 60px;">
+					<h2>Rolls Royce</h2>
+					<div class="mySlides1">
+						<img class="image" src="images/rollsroyce/rr-cullinan.jpg" style="width: 290px" alt="Lake Waccamaw by Dr. David E. Drake " />
+						<p>
+							Rolls Royce Cullinan
+							<br />
+							HP: 563 
+							<br />
+							Price: $350 - 450k
+							
+						  </p>
+					  </div>
+			
+					  <div class="mySlides1">
+						<img class="image" src="images/rollsroyce/rr-ghost.jpg" style="width: 290px" alt="Untitled by Dr. David E. Drake " />
+						<p>
+							Rolls Royce Ghost
+							<br />
+							HP: 563 
+							<br />
+							Price: $339k
+							
+						  </p>
+					  </div>
+			
+					  <div class="mySlides1">
+						<img class="image" src="images/rollsroyce/rr-phantom.jpg" style="width: 290px" alt="Southern Pines by Dr. David E. Drake " />
+						<p>
+							Rolls Royce Phantom
+							<br />
+							HP: 563 
+							<br />
+							Price: $450 - 550k
+							
+						  </p>
+					  </div>
+			
+					  
+			
+					  <div class="rollsroyceSlider">
+						<div class="leftHover" onclick="plusDivs1(-1)">&#10094;</div>
+						<div class="rightHover" onclick="plusDivs1(1)">&#10095;</div>
+					  </div>
+			
+					  </div>
+			
+				<div class="filterDiv Ferrari" style="max-width: 75%;margin-bottom: 60px;">
+					<h2>Ferrari</h2>
+					<div class="mySlides2">
+						<img class="image" src="images/ferrari/ferrari-458.jpg" style="width: 290px" alt="Diving by Fred Good " />
+						<p>
+							Ferrari 458
+							<br />
+							HP: 597 
+							<br />
+							Price: $150 - 300k
+							
+						  </p>
+					  </div>
+			
+					  <div class="mySlides2">
+						<img class="image" src="images/ferrari/ferrari-488.jpg" style="width: 290px" alt="Three on a Hobie
+						by Ann Respess " />
+						<p>
+							Ferrari 488
+							<br />
+							HP: 711 
+							<br />
+							Price: $250 - 300k
+							
+						  </p>
+					  </div>
+
+					  <div class="mySlides2">
+						<img class="image" src="images/ferrari/ferrari-laferrari.jpg" style="width: 290px" alt="Three on a Hobie
+						by Ann Respess " />
+						<p>
+							Ferrari LaFerrari
+							<br />
+							HP: 788
+							<br />
+							Price: $1.4 Million +
+							
+						  </p>
+					  </div>
+			
+					  <div class="FerrariSlider" >
+						<div class="leftHover" onclick="plusDivs2(-1)">&#10094;</div>
+						<div class="rightHover" onclick="plusDivs2(1)">&#10095;</div>
+					  </div>
+				</div>
+			
+				<div class="filterDiv Mopar" style="max-width: 75%;margin-bottom: 60px;">
+					<h2>Mopar</h2>
+					<div class="mySlides3">
+						<img class="image" src="images/Dodge/challenger-hellcat.jpg" style="width: 290px" alt="What a Day by Vivien Weller " />
+						<p>
+							Challenger Hellcat
+							<br />
+							HP: 707
+							<br />
+							Price: $60-90k
+							
+						  </p>
+					  </div>
+			
+					  <div class="mySlides3">
+						<img class="image" src="images/Dodge/charger-hellcat.jpg"  style="width: 290px" alt="Basket! by Vivien Weller	 " />
+						<p>
+							Charger Hellcat
+							<br />
+							HP: 707
+							<br />
+							Price: $60-90k
+							
+						  </p>
+					  </div>
+			
+					  <div class="mySlides3">
+						<img class="image" src="images/Dodge/trackhawk.jpg"  style="width: 290px" alt="Ballet Secrets by Vivien Weller " />
+						<p>
+							Jeep Trackhawk
+							<br />
+							HP: 707
+							<br />
+							Price: $60-100k
+							
+						  </p>
+					  </div>
+			
+					  <div class="DodgeSlider" >
+						<div class="leftHover" onclick="plusDiv3(-1)">&#10094;</div>
+						<div class="rightHover" onclick="plusDiv3(1)">&#10095;</div>
+					  </div>
+				</div>
+			
+				
+			</div>
+
+
+
+      
+  </body>
+
+  <script src="functions.js"></script>
+</html>
