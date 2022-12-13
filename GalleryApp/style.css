@@ -1,0 +1,179 @@
+/* .wrap{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+} */
+
+.wrap{
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 1%;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+
+
+
+.intro{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.LamborginiSlider,.rollsroyceSlider,.FerrariSlider,.DodgeSlider{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.image{
+    cursor: pointer;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    overflow: hidden;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition:.2s linear;
+}
+
+.image:hover{
+    transform: scale(1.1);
+}
+
+.popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span {
+    position: absolute;
+    top:0;right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 5px solid #fff; */
+    /* border-radius: 5px; */
+    width: 35%;
+}
+
+h2{
+    text-align: center;
+    /* border-bottom: solid 3px; */
+    border-radius: 5px;
+    padding: 5px;
+    background-color: red;
+    /* border-color: #e3a832; */
+    color: white;
+}
+
+@media (max-width:768px){
+    .popup-image img{
+        width: 95%;
+    }
+}
+
+.filterDiv {
+    
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .mySlides{
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .mySlides1{
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .mySlides2{
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .mySlides3{
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .mySlides4{
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .mySlides5{
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+  
+  .show {
+    display: block;
+    
+  }
+  
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+    
+  }
+  
+  /* Style the buttons */
+  .btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    align-items: flex-start;
+    
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: red;
+  }
+  
+  .btn.active {
+    background-color: white;
+    color: red;
+  }
